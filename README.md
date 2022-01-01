@@ -7,15 +7,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Stack
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://img.icons8.com/color/48/000000/javascript.png"/> </a>
+<a href="https://reactjs.org/" target="_blank"> <img src="https://img.icons8.com/color/48/000000/react-native.png"/> </a>
+<a href="https://redux.js.org" target="_blank"> <img src="https://img.icons8.com/color/48/000000/redux.png"/> </a>
+
 ## Available Scripts
 
 In the project directory, you can run:
 
-## Installation
+### Installation
 ```bash
 $ npm install
 ```
-## Running the app
+### Running the app
 ```bash
 $ npm run start
 ```
@@ -26,7 +32,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-## Test
+### Test
 ```bash
 $ npm run test
 ```
@@ -34,7 +40,7 @@ $ npm run test
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## build
+### build
 ```bash
 $ npm run build
 ```
