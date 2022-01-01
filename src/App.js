@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import TodoItem from './components/TodoItem';
+import { useSelector } from 'react-redux';
+import { selectTodo } from './components/Todo';
+import Input from './components/Input';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const todo = useSelector(selectTodo);
+	return (
+		<div className='App'>
+			<div className='container'>
+				<div className='todo'>
+					{todo.map(item => (
+						<TodoItem name={item.item} done={item.done} id={item.id} />
+					))}
+				</div>
+				<Input />
+			</div>
+		</div>
+	);
 }
 
 export default App;
